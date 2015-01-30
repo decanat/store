@@ -1,0 +1,32 @@
+<html lang="de">
+  <head>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="mocha.css" />
+
+    <script src="mocha.js"></script>
+    <script>
+      mocha.ui('bdd');
+      mocha.reporter('html');
+    </script>
+
+  </head>
+  <body>
+
+    <div id="mocha"></div>
+
+    <h1 id="el-h1">Hallo</h1>
+    <div id="el-div" lang="hy">
+        <p id="el-p"> պրիվետ </p>
+    </div>
+
+    <script src="build.js"></script>
+    <script>
+      if (window.mochaPhantomJS)
+        mochaPhantomJS.run();
+      else
+        mocha.run();
+    </script>
+
+  </body>
+</html>

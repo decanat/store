@@ -1,6 +1,6 @@
+var assert = require('assert');
 
-var assert = require('component/assert');
-var store = require('../index');
+var store = require('../');
 
 describe('store', function(){
   beforeEach(function(){
